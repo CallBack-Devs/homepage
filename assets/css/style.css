@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+@font-face {
+    font-family: "AvenirBold";
+    src: url(../fonts/AvenirNextLTPro-Bold.otf);
+}
+
+@font-face {
+    font-family: "AvenirRegular";
+    src: url(../fonts/AvenirNextLTPro-Regular.otf);
+}
+
+@font-face {
+    font-family: "BoskaVariable";
+    src: url(../fonts/Boska-Variable.ttf);
+}@font-face {
+    font-family: "BoskaVariableItalic";
+    src: url(../fonts/Boska-VariableItalic.ttf);
+}
+@font-face {
+    font-family: "SwitzerMedium";
+    src: url(../fonts/Switzer-Medium.otf);
+}
+@font-face {
+    font-family: "SwitzerRegular";
+    src: url(../fonts/Switzer-Regular.otf);
+}
+@font-face {
+    font-family: "SwitzerSemibold";
+    src: url(../fonts/Switzer-Semibold.otf);
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+:root {
+    --light-green: #75FF69;
+    --dark-green: #1B3936;
+}
+
+html {
+    background-color: var(--dark-green);
+}
+
+/* HERO */
+body {
+    background-image: url(../images/grain.png);
+
+
+}
+#hero{
+    background: url(../images/Image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    position: relative;
+}
+#hero::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: url(../images/Line.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px 0;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem
+}
+.navbar ul li{
+    font-family: "SwitzerRegular";
+    color: #fff;
+}
+.left {
+    display: flex;
+}
+
+.right {
+    display: flex;
+    justify-content: end;
+}
+
+.logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.logo span{
+    font-size: 40px;
+    font-family: "Oranienbaum", serif;
+    color: var(--light-green);
+    transform: scale(1, 1.5);
+}
+
+.logo img {
+    width: 10%;
+}
+.hero-text{
+    padding: 60px 0 130px 0;
+    position: relative;
+}
+.hero-text .one{
+    line-height: 100%;
+}
+.hero-text p{
+    text-align: center;
+    color: #e4e4e4;
+    font-family: "SwitzerRegular";
+    font-size: 20px;
+    width: 46%;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+.hero-text .two{
+    margin-left: 370px;
+    font-style: italic!important;
+    font-family: "BoskaVariableItalic";
+    color: var(--light-green);
+    line-height: 70%;
+}
+.hero-text h2{
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    font-family: "BoskaVariable", serif;
+    font-size: 200px;
+    text-transform: capitalize;
+}
+.hero-text .three{
+    line-height: 50%;
+}
+.hero-text h4{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    font-family: "BoskaVariable", serif;
+}
+.hero-text button{
+    position: absolute;
+    border: none;
+    box-shadow: 0px 0px 0px 5px #ffffff5c;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 50px;
+    top: 40%;
+    right: 7%;
+    color: var(--light-green);
+;
+}
