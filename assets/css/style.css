@@ -555,6 +555,42 @@ body {
     transition: all linear 0.3s;
 }
 
+/************************** SLIDER *****************************/
+#slider{
+    background: #F9F9F9;
+    padding: 100px 0;
+}
+.slider-top{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding: 100px 0;
+    color: var(--dark-green);
+}
+
+.slider-top h1{
+    font-family: 'BoskaVariable', sans-serif;
+    font-size: 5.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.slider-top .slider-para h2{
+    font-family: 'Switzer', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.slider-para{
+    place-self: end;
+}
+
+
+.responsive{
+    padding: 100px 0;
+}
+
 /************************** contact *****************************/
 
 #contact{
