@@ -286,8 +286,9 @@ body {
 
 /***************************************************** ABOUT *****************************************************/
 #about {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
     position: relative;
+    margin-bottom: -5px;
 }
 
 .about-box {
@@ -337,7 +338,7 @@ background: radial-gradient(circle, rgba(27,57,54,1) 22%, rgba(222,244,222,0) 67
 
 /************** CABIN **********/
 #cabin {
-    background: #fff;
+    background: #f9f9f9;
     padding: 100px 0;
 }
 
