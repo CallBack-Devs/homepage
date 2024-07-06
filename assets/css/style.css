@@ -300,7 +300,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgb(27,57,54);
-background: radial-gradient(circle, rgba(27,57,54,1) 37%, rgba(222,244,222,0) 100%);
+background: radial-gradient(circle, rgba(27,57,54,1) 35%, rgba(222,244,222,0) 59%);
+
 }
 .about-text h3{
     color: #75FF69;
