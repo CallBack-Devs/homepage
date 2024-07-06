@@ -347,5 +347,11 @@ body {
     font-size: 5rem;
     font-weight: 400;
     line-height: 120%;
+}
 
+.cabin-img{
+    margin: 0 20px;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 20px;
 }
