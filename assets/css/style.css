@@ -312,8 +312,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgb(27,57,54);
-background: radial-gradient(circle, rgba(27,57,54,1) 22%, rgba(222,244,222,0) 67%);
+    background: rgb(27, 57, 54);
+    background: radial-gradient(circle, rgba(27, 57, 54, 1) 22%, rgba(222, 244, 222, 0) 67%);
 
 }
 
@@ -351,7 +351,7 @@ background: radial-gradient(circle, rgba(27,57,54,1) 22%, rgba(222,244,222,0) 67
     margin-bottom: 100px;
 }
 
-.cabin-img{
+.cabin-img {
     width: 96%;
     margin: 0 auto;
     display: grid;
@@ -360,11 +360,11 @@ background: radial-gradient(circle, rgba(27,57,54,1) 22%, rgba(222,244,222,0) 67
     align-items: center;
 }
 
-.cabin-class{
+.cabin-class {
     position: relative;
 }
 
-.cabin-text{
+.cabin-text {
     position: absolute;
     bottom: 10%;
     left: 10%;
@@ -373,19 +373,20 @@ background: radial-gradient(circle, rgba(27,57,54,1) 22%, rgba(222,244,222,0) 67
     grid-template-columns: 80% 20%;
     align-items: center;
 }
-.cabin-text h3{
+
+.cabin-text h3 {
     font-family: 'BoskaVariable', sans-serif;
     font-size: 2.5rem;
     font-weight: 300;
 }
 
-#cabin-grid p{
+#cabin-grid p {
     font-family: 'Switzer', sans-serif;
     font-weight: 400;
     font-size: 1rem;
-
 }
-.cabin-text .icon img{
+
+.cabin-text .icon img {
     height: auto;
     width: 50%;
     opacity: 0;
@@ -411,34 +412,36 @@ background: radial-gradient(circle, rgba(27,57,54,1) 22%, rgba(222,244,222,0) 67
 .cabin-class img {
     position: relative;
     height: 45rem;
-    object-fit: cover;  
-    width: 100%; 
+    object-fit: cover;
+    width: 100%;
 }
 
-.cabin-class:hover{
+.cabin-class:hover {
     flex: 1.5;
     cursor: pointer;
     height: 43rem;
 }
 
-.cabin-class .cabin-text p{
+.cabin-class .cabin-text p {
     opacity: 0;
     transition: 0.8s linear;
 }
 
-.cabin-class:hover .cabin-text p{
+.cabin-class:hover .cabin-text p {
     opacity: 1;
     transition: 0.8s linear;
     font-family: 'Switzer', sans-serif;
     font-weight: 300;
     color: #dedede;
 }
-.cabin-class:hover .cabin-text h3{
+
+.cabin-class:hover .cabin-text h3 {
     font-size: 3.2rem;
     font-weight: 500;
     transition: 0.8s linear;
 }
-.cabin-class:hover .icon img{
+
+.cabin-class:hover .icon img {
     opacity: 1;
     transition: 1s linear;
 }
@@ -455,4 +458,83 @@ background: radial-gradient(circle, rgba(27,57,54,1) 22%, rgba(222,244,222,0) 67
 
 .card:nth-child(3) img {
     left: 0;
+}
+
+#cta {
+    padding: 100px;
+}
+
+.cta-box{
+    background: url(../images/BG.png);
+    padding: 100px;
+    color: #fff;
+    align-content: center;
+}
+
+.cta-text{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#cta h1{
+    font-family: 'BoskaVariable', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+#cta span{
+    color: var(--light-green);
+}
+
+#cta p{
+    font-family: 'Switzer', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 3% 0;
+}
+
+.cta-form{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.cta-form input:active, .cta-form input:focus, .cta-form input:focus-visible{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.cta-form button:active, .cta-form button:focus, .cta-form button:focus-visible{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.cta-form input{
+    padding: 5% 10%;
+    font-family: 'Switzer', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--dark-green);
+    text-transform: capitalize;
+}
+
+.cta-form input::placeholder{
+    font-family: 'Switzer', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #BBBBBB;
+    text-transform: capitalize;
+}
+
+
+
+.cta-form button{
+    background-color: var(--light-green);
+    color: var(--dark-green);
+    font-family: 'Switzer', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
 }
