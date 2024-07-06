@@ -374,24 +374,8 @@ background: radial-gradient(circle, rgba(27,57,54,1) 22%, rgba(222,244,222,0) 67
 }
 .cabin-text h3{
     font-family: 'BoskaVariable', sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 300;
-}
-
-#cabin-grid{
-    position: absolute;
-    top: 80%;
-    left: 10%;
-    color: #f9f9f9;
-    display: grid;
-    grid-template-columns: 80% 10%;
-    gap: 10%;
-    
-}
-#cabin-grid h3{
-    font-family: 'BoskaVariable', sans-serif;
-    font-size: 4rem;
-    font-weight: 500;
 }
 
 #cabin-grid p{
@@ -406,7 +390,7 @@ background: radial-gradient(circle, rgba(27,57,54,1) 22%, rgba(222,244,222,0) 67
     opacity: 0;
     transition: 0.8s linear;
 }
-/* dgkfhdsfujigbdfujhgb */
+
 .cabin-img {
     display: flex;
     gap: 1rem;
