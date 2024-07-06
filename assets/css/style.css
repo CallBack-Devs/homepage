@@ -554,3 +554,162 @@ body {
     color: #75FF69;
     transition: all linear 0.3s;
 }
+
+/************************** contact *****************************/
+
+#contact{
+    background: #FFFFFF;
+}
+
+#contact .contact-text{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 150px 0;
+    width: 70%;
+}
+
+.c-img{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#contact img{
+    width: 50%;
+}
+
+.c-text{
+    color: var(--dark-green);
+}
+
+.c-text h1{
+    font-family: 'BoskaVariable', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.c-text p{
+    font-family: 'Switzer', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.c-text button{
+    font-family: 'Switzer', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    background: transparent;
+    border: 1px solid var(--dark-green);
+    border-radius: 50%;
+    padding: 20px 40px;
+    margin: 50px 0;
+    transition: all linear 0.3s;
+}
+
+.c-text button:hover{
+    background-color: var(--dark-green);
+    color: #FFFFFF;
+    transition: all linear 0.3s;
+}
+
+/************************** footer *****************************/
+
+#footer .footer-links{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: left;
+    color: #FFFFFF;
+}
+
+#footer .box:hover{
+    background: var(--light-green);
+    color: var(--dark-green);
+    transition: all linear 0.3s;
+}
+
+#footer .box{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: end;
+    padding: 100px 100px;
+    position: relative;
+    transition: all linear 0.3s;
+}
+
+.box-text{
+    position: relative;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer svg{
+    transform: rotate(45deg);
+}
+
+#footer h1{
+    font-family: 'BoskaVariable', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    order: 2;
+    transition: all linear 0.3s;
+}
+
+#footer p{
+    font-family: 'Switzer', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    order: 1;
+    transition: all linear 0.3s;
+}
+
+#footer .box:hover .box-text h1{
+    order: 1;
+    transition: all linear 0.3s;
+}
+#footer .box:hover .box-text p{
+    order: 2;
+    transition: all linear 0.3s;
+}
+
+.icon-box{
+    position: relative;
+    top: 5%;
+}
+
+.box:hover .icon-box{
+    position: relative;
+    top: 60%;
+    right: -90%;
+    transition: all linear 0.7s;
+}
+
+.box svg path{
+    stroke: #678784;
+}
+
+.box:hover svg path{
+    stroke: var(--dark-green);
+}
+
+/* *************************** LINKS ****************************** */
+.links{
+    background: #FFFFFF;
+}
+
+.links div{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 2px;
+}
+
+.links a{
+    color: var(--dark-green);
+    font-family: 'Switzer', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
