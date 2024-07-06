@@ -319,3 +319,18 @@ background: radial-gradient(circle, rgba(27,57,54,1) 35%, rgba(222,244,222,0) 59
 .about-text p span{
     color: #adadad;
 }
+
+/************** CABIN **********/
+#cabin {
+    background: #fff;
+    padding: 100px 0;
+}
+
+#cabin-head {
+    color: var(--dark-green);
+    font-family: 'BoskaVariable', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 120%;
+
+}
