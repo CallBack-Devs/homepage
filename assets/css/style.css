@@ -388,7 +388,7 @@ background: radial-gradient(circle, rgba(27,57,54,1) 22%, rgba(222,244,222,0) 67
     height: auto;
     width: 50%;
     opacity: 0;
-    transition: 0.8s linear;
+    transition: 1s linear;
 }
 
 .cabin-img {
@@ -409,7 +409,7 @@ background: radial-gradient(circle, rgba(27,57,54,1) 22%, rgba(222,244,222,0) 67
 
 .cabin-class img {
     position: relative;
-    height: 40rem;
+    height: 45rem;
     object-fit: cover;  
     width: 100%; 
 }
@@ -417,7 +417,7 @@ background: radial-gradient(circle, rgba(27,57,54,1) 22%, rgba(222,244,222,0) 67
 .cabin-class:hover{
     flex: 1.5;
     cursor: pointer;
-    height: 40rem;
+    height: 43rem;
 }
 
 .cabin-class .cabin-text p{
@@ -439,7 +439,7 @@ background: radial-gradient(circle, rgba(27,57,54,1) 22%, rgba(222,244,222,0) 67
 }
 .cabin-class:hover .icon img{
     opacity: 1;
-    transition: 0.8s linear;
+    transition: 1s linear;
 }
 
 
