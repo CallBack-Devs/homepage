@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
 }
-
+::selection{
+    background: var(--dark-green);
+    color: #fff;
+}
 img {
     width: 100%;
 }
@@ -18,7 +21,30 @@ a {
 a:hover {
     text-decoration: none;
 }
-
+input{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+input:active,
+input:focus, 
+input:focus-visible{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+button:active, 
+button:focus, 
+button:focus-visible{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+button{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
 @import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
 @import url('https://fonts.cdnfonts.com/css/switzer?styles=135298,135301,135291,135294,135296,135299,135287,135289,135285');
 
@@ -89,6 +115,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 70%;
+    z-index: -1;
 }
 
 
@@ -96,6 +123,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 40px 0;
+    z-index: 456;
 }
 
 .navbar ul {
@@ -104,7 +132,7 @@ body {
     gap: 2rem
 }
 
-.navbar ul li {
+.navbar ul li a {
     font-family: 'Switzer', sans-serif;
     color: #fff;
 }
@@ -505,17 +533,7 @@ body {
     padding-top: 5%;
 }
 
-.cta-form input:active, .cta-form input:focus, .cta-form input:focus-visible{
-    border: none;
-    box-shadow: none;
-    outline: none;
-}
 
-.cta-form button:active, .cta-form button:focus, .cta-form button:focus-visible{
-    border: none;
-    box-shadow: none;
-    outline: none;
-}
 
 .cta-form input{
     padding: 5% 10%;
@@ -588,6 +606,7 @@ body {
 
 .responsive{
     margin: 100px 0 100px 0;
+    position: relative;
 }
 .responsive .slides{
     display: flex;
@@ -620,7 +639,43 @@ body {
     color: #575757;
     line-height: 90%;
 }
-
+.slick-next{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: var(--dark-green);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: all linear .2s;
+    position: absolute;
+    bottom: -20%;
+    left: 52%;
+}.slick-next:hover{
+    background: var(--light-green);
+    color: var(--dark-green);
+    transition: all linear .2s;
+    cursor: pointer;
+}
+.slick-prev{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: var(--dark-green);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    position: absolute;
+    bottom: -20%;
+    left: 48%;
+    transition: all linear .2s;
+}.slick-prev:hover{
+    background: var(--light-green);
+    color: var(--dark-green);
+    transition: all linear .2s;
+    
+    cursor: pointer;
+}
 
 
 /************************** contact *****************************/

@@ -1,9 +1,12 @@
 $('.responsive').slick({
   dots: false,
-  infinite: false,
+  infinite: true,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,
+  arrows: true,
+  nextArrow: '<button type="button" class="slick-next"><i class="fa-thin fa-arrow-right-long"></i></button>',
+  prevArrow: '<button type="button" class="slick-prev"><i class="fa-thin fa-arrow-left-long"></i></button>',
   autoplay: true,
   responsive: [
     {
