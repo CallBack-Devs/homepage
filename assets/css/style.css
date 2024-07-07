@@ -476,7 +476,7 @@ body {
 }
 
 .cta-text{
-    width: 50%;
+    width: 51%;
     margin: 0 auto;
     text-align: center;
 }
@@ -569,7 +569,7 @@ body {
 
 .slider-top h1{
     font-family: 'BoskaVariable', sans-serif;
-    font-size: 5.5rem;
+    font-size: 4.7rem;
     font-weight: 400;
     text-transform: capitalize;
 }
@@ -577,8 +577,7 @@ body {
 .slider-top .slider-para h2{
     font-family: 'Switzer', sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;
-    text-align: right;
+    font-size: 1.3rem;
     margin-bottom: 20px;
 }
 
@@ -588,8 +587,41 @@ body {
 
 
 .responsive{
-    padding: 100px 0;
+    margin: 100px 0 100px 0;
 }
+.responsive .slides{
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+.responsive .slides img{
+    width: 70%;
+}
+.slide-text{
+    background: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 70%;
+}
+.slide-text h5{
+    font-size: 25px;
+}
+.slide-text h4{
+    font-family: 'Switzer', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.slide-text h6{
+    font-family: 'Switzer', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #575757;
+    line-height: 90%;
+}
+
+
 
 /************************** contact *****************************/
 
@@ -663,6 +695,7 @@ body {
     background: var(--light-green);
     color: var(--dark-green);
     transition: all linear 0.3s;
+    cursor: pointer;
 }
 
 #footer .box{
@@ -704,31 +737,40 @@ body {
 
 #footer .box:hover .box-text h1{
     order: 1;
-    transition: all linear 0.3s;
+    transition: all linear 0.6s;
 }
 #footer .box:hover .box-text p{
     order: 2;
-    transition: all linear 0.3s;
+    transition: all linear 0.6s;
 }
 
 .icon-box{
+    display: flex;
+    justify-content: end;
+    transition: all linear 0.7s;
     position: relative;
-    top: 5%;
+    top: 0;
+    left: 0;
 }
 
 .box:hover .icon-box{
     position: relative;
-    top: 60%;
-    right: -90%;
+    top: 50%;
+    left: 60%;
     transition: all linear 0.7s;
 }
-
+#footer svg{
+    transform: rotate(45deg);
+    transition: all linear 0.7s;
+}
 .box svg path{
     stroke: #678784;
+    transition: all linear 0.7s;
 }
 
 .box:hover svg path{
     stroke: var(--dark-green);
+    transition: all linear 0.7s;
 }
 
 /* *************************** LINKS ****************************** */
@@ -739,8 +781,7 @@ body {
 .links div{
     display: flex;
     justify-content: space-around;
-    padding-top: 20px;
-    padding-bottom: 2px;
+    padding: 20px 0;
 }
 
 .links a{
